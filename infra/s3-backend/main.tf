@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "eks-state-bucket-020921"
+  bucket = "eks-state-bucket-020925"
 
   lifecycle {
     prevent_destroy = false
