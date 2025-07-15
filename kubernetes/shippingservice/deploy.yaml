@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shippingservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: shippingservice
+  template:
+    metadata:
+      labels:
+        app: shippingservice
+    spec:
+      containers:
+        - name: service
+          image: iamfet/shippingservice:v15797358403
+          ports:
+            - containerPort: 50051
+          livenessProbe:
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            grpc:
+              port: 50051
+          readinessProbe:
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            grpc:
+              port: 50051
+          resources:
+            requests:
+              cpu: 100m
+              memory: 64Mi
+            limits:
+              cpu: 200m
+              memory: 128Mi
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: shippingservice
+spec:
+  type: ClusterIP
+  selector:
+    app: shippingservice
+  ports:
+    - port: 50051
+      targetPort: 50051
