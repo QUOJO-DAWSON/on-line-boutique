@@ -4,7 +4,7 @@ terraform {
     key          = "terraform.tfstate"
     region       = "us-east-2"
     encrypt      = true
-    use_lockfile = true                              # Enable S3 native state locking, remove if using DynamoDB for state locking
+
     /*dynamodb_table = "terraform-eks-state-locks"*/ # Uncomment if using DynamoDB for state locking
   }
 }
