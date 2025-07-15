@@ -1,0 +1,4 @@
+.terraform/*   #ignore local terraform directory
+*.tfstate    #ignore terraform state files contains sensitive information
+*.tfstate.*  #ignore terraform state files contains sensitive information
+*.tvars #variable file may contain sensitive data like keys and should be ignored. Teams members should have it locally
