@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: emailservice
-          image: iamfet/emailservice:v15797358403
+          image: dawsonkesson/emailservice:v16319814565
           ports:
             - containerPort: 8080
           env:

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: emailservice
-          image: iamfet/emailservice:v15797358403
+          image: dawsonkesson/emailservice:v16319814565
           ports:
             - containerPort: 8080
           env:
@@ -68,7 +68,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/recommendationservice:v15797358403
+          image: dawsonkesson/recommendationservice:v16319814565
           ports:
             - containerPort: 8080
           env:
@@ -124,7 +124,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/productcatalogservice:v15799764690
+          image: dawsonkesson/productcatalogservice:v16319814565
           ports:
             - containerPort: 3550
           env:
@@ -180,7 +180,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/paymentservice:v15797358403
+          image: dawsonkesson/paymentservice:v16319814565
           ports:
             - containerPort: 50051
           env:
@@ -235,7 +235,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/currencyservice:v15797358403
+          image: dawsonkesson/currencyservice:v16319814565
           ports:
             - containerPort: 7000
           env:
@@ -291,7 +291,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/shippingservice:v15797358403
+          image: dawsonkesson/shippingservice:v16319814565
           ports:
             - containerPort: 50051
           livenessProbe:
@@ -342,7 +342,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/adservice:v15797358403
+          image: dawsonkesson/adservice:v16319814565
           ports:
             - containerPort: 9555
           env:
@@ -396,7 +396,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/cartservice:v15797358403
+          image: dawsonkesson/cartservice:v16319814565
           ports:
             - containerPort: 7070
           env:
@@ -509,7 +509,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/checkoutservice:v15797358403
+          image: dawsonkesson/checkoutservice:v16319814565
           ports:
             - containerPort: 5050
           env:
@@ -575,7 +575,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/frontend:v15797358403
+          image: dawsonkesson/frontend:v16319814565
           ports:
             - containerPort: 8080
           env:

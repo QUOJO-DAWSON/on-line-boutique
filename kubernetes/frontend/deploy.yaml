@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/frontend:v15797358403
+          image: dawsonkesson/frontend:v16319814565
           ports:
             - containerPort: 8080
           env:

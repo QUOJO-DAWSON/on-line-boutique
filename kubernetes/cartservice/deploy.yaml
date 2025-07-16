@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/cartservice:v15797358403
+          image: dawsonkesson/cartservice:v16319814565
           ports:
             - containerPort: 7070
           env:

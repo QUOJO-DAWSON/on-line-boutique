@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/checkoutservice:v15797358403
+          image: dawsonkesson/checkoutservice:v16319814565
           ports:
             - containerPort: 5050
           env:

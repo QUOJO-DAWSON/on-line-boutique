@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/currencyservice:v15797358403
+          image: dawsonkesson/currencyservice:v16319814565
           ports:
             - containerPort: 7000
           env:

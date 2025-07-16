@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: service
-          image: iamfet/productcatalogservice:v15797358403
+          image: dawsonkesson/productcatalogservice:v16319814565
           ports:
             - containerPort: 3550
           env:
